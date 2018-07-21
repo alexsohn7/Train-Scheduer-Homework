@@ -1,0 +1,24 @@
+.jumbotron {
+    background-color: black; 
+    }
+    .jumbotron-fluid {
+        width: 150%;
+        margin-left: -25%;
+    }
+    .display-4 {
+        margin-left: 23%;
+        color: white;
+        font-weight: bold;
+        
+    }
+       
+    .lead {
+        margin-left: 33.5%;
+        color: white;
+        font-weight: bold;
+    }
+       
+    .form {
+        border: 1.25px solid lightgray;
+        padding: 5% 3%;
+    }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+
+</head>
+
+<body>
+    <!-- Jumbotron top -->
+    <div class="container">
+
+        <br>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4"> All Aboard the Choo Choo Train </h1>
+                <h2 class="lead"> Hop On Board! </h2>
+            </div>
+        </div>
+
+    </div>
+    <!-- Form in middle for employee capture -->
+
+    <div class="form">
+        <form>
+            <div class="form-group">
+                <h1>Add Train</h1>
+                <label for="name">
+                    <h6> Train Name </h6>
+                </label>
+                <input type="name" class="form-control" id="addTrainName">
+            </div>
+            <div class="form-group">
+                <label for="role">
+                    <h6> Destination </h6>
+                </label>
+                <input type="role" class="form-control" id="addDestination">
+            </div>
+            <div class="form-group">
+                <label for="date">
+                    <h6> Time of First Train Each Day (HH:mm) </h6>
+                </label>
+                <input type="startdate" class="form-control" id="addTrainTime">
+            </div>
+            <div class="form-group">
+                <label for="rate">
+                    <h6> Frequency (in minutes) </h6>
+                </label>
+                <input type="rate" class="form-control" id="addTrainFrequency">
+            </div>
+            <button type="submit" class="btn btn-primary" id = "submitBtn">Submit</button>
+        </form>
+    </div>
+    <!-- div with row/cols for results -->
+    <div class="card">
+        <h5 class="card-header"> Current Train Schedule </h5>
+        <div class="card-body">
+            <table class = "table" id = "trainTable">
+                    
+                    <thead>
+                        <tr>
+                            <th> Train Name </th>
+                            <th> Destination </th>
+                            <th> Frequency </th>
+                            <th> Next Arrival </th>
+                            <th> Minutes Away </th>
+                        </tr>
+                    </thead> 
+
+                    <tbody> 
+                        <tr> 
+                            <td>  </td>
+                            <td>  </td>
+                            <td>  </td>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+                    </tbody>
+
+
+                </table>
+        </div>
+    
+    </div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <!-- Moment.js -->
+ <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+ 
+<script src="assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>
